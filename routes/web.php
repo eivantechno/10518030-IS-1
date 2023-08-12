@@ -12,4 +12,9 @@ use App\Http\Controllers\ProdukController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/belajar', [ProdukController::class,'index']);
+Route::get('/produk', [ProdukController::class,'create']);
+Route::get('/produk', [ProdukController::class,'store']);
+Route::get('/produk', [ProdukController::class,'edit'])->name('produk.edit');
+Route::post('/produk/create{produk?}', [ProdukController::class,'store'])->name('produk.edit');
+
+ 

@@ -19,4 +19,6 @@ return new class extends Migration
     {
         Schema::table('produk', function (Blueprint $table) {
             $table->renameColumn('stok', 'stok_produk');
+           });
+
     }

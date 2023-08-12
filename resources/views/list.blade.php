@@ -23,6 +23,9 @@
                 
             <div class="col-lg-12">
                 <table class="table">
+                    <form action=*{{url('produk/create'.@$produk->id)}} method="POST" enctype="multipart/form-data">
+                    @csrf
+                    </form>
                     <thead>
                     <tr>
                         <th>No</th>
@@ -62,7 +65,12 @@
                         <td>Sepatu Custom Bandung</td>
                         <td>1</td>
                         <td>Rp10.000</td>
-
+<div>
+    <label for=""></label>
+    <div class="col-sm-5">
+        <input type="file" class="form-control name=*foto_produk* id="foto_produk"> 
+    </div>
+</div>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $loop->kwtegori_produk }}</td>
                         <td>{{ $loop->nama_produk }}</td>
